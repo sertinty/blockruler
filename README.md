@@ -8,6 +8,14 @@ Minecraft **1.21.11** / Fabric 的**纯客户端**两点测距模组。用准星
 
 ---
 
+## 下载安装
+
+1. 到 [**Releases**](https://github.com/sertinty/blockruler/releases) 下载 `blockruler-1.0.0.jar`
+2. 装好 Fabric Loader（≥ 0.19.3）与 [Fabric API](https://modrinth.com/mod/fabric-api) **0.141.4+1.21.11**
+3. 把 jar 丢进 `.minecraft/mods/`
+
+---
+
 ## 一、快速上手
 
 进游戏后，左上角会出现 `数格子 BlockRuler` 面板。
