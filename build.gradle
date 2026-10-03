@@ -1,0 +1,63 @@
+plugins {
+    id 'fabric-loom' version '1.17.20'
+    id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+    archivesName = project.archives_base_name
+}
+
+repositories {
+    // Loom 会自动加入 Minecraft / Fabric 的仓库，这里不需要额外配置。
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+    // Fabric API：HUD 元素、快捷键、客户端命令都要用
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+}
+
+processResources {
+    inputs.property "version", project.version
+    inputs.property "minecraft_version", project.minecraft_version
+    inputs.property "loader_version", project.loader_version
+    filteringCharset "UTF-8"
+
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}
+
+def targetJavaVersion = 21
+tasks.withType(JavaCompile).configureEach {
+    it.options.encoding = "UTF-8"
+    if (targetJavaVersion >= 10 || JavaVersion.current().isJava10Compatible()) {
+        it.options.release.set(targetJavaVersion)
+    }
+}
+
+java {
+    def javaVersion = JavaVersion.toVersion(targetJavaVersion)
+    if (JavaVersion.current() < javaVersion) {
+        toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)
+    }
+    withSourcesJar()
+}
+
+jar {
+    // Gradle 9 移除了 project.archivesBaseName，改用 base.archivesName
+    from("LICENSE") {
+        rename { "${it}_${project.base.archivesName.get()}" }
+    }
+}
+
+// 生成物统一放到 build/libs，文件名固定成 blockruler-<version>.jar
+tasks.named('remapJar') {
+    archiveFileName = "blockruler-${project.mod_version}.jar"
+}

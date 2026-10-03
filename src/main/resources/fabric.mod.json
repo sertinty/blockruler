@@ -1,0 +1,25 @@
+{
+    "schemaVersion": 1,
+    "id": "blockruler",
+    "version": "${version}",
+    "name": "BlockRuler 数格子",
+    "description": "纯客户端的两点测距工具：准星选中两点，立刻显示三轴格数、直线距离与体积。服务端无需安装。",
+    "authors": [
+        "sertinty"
+    ],
+    "contact": {},
+    "license": "MIT",
+    "icon": "assets/blockruler/icon.png",
+    "environment": "client",
+    "entrypoints": {
+        "client": [
+            "com.sertinty.blockruler.BlockRulerClient"
+        ]
+    },
+    "depends": {
+        "fabricloader": ">=0.19.3",
+        "minecraft": "~1.21.11",
+        "java": ">=21",
+        "fabric-api": "*"
+    }
+}

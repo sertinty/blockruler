@@ -1,0 +1,35 @@
+{
+  "key.category.blockruler.main": "数格子 BlockRuler",
+  "key.blockruler.set_a": "设置点 A（准星所指方块）",
+  "key.blockruler.set_b": "设置点 B（准星所指方块）",
+  "key.blockruler.clear": "清除两点",
+  "key.blockruler.toggle_hud": "显示/隐藏 HUD 面板",
+
+  "blockruler.hud.title": "数格子 BlockRuler",
+  "blockruler.hud.unset": "未设置",
+
+  "blockruler.label.delta": "Δ",
+  "blockruler.label.span": "格数",
+  "blockruler.label.distance": "直线距离",
+  "blockruler.label.volume": "体积",
+  "blockruler.label.dimension": "维度",
+  "blockruler.unit.blocks": "方块",
+
+  "blockruler.hint.empty": "按 G / H 用准星选中两点",
+  "blockruler.hint.only_a": "点 A 已选好，按 H 选点 B",
+  "blockruler.hint.only_b": "点 B 已选好，按 G 选点 A",
+
+  "blockruler.msg.set_a": "点 A 已设为 %s",
+  "blockruler.msg.set_b": "点 B 已设为 %s",
+  "blockruler.msg.cleared": "两点已清除",
+  "blockruler.msg.hud_on": "HUD 面板已显示",
+  "blockruler.msg.hud_off": "HUD 面板已隐藏",
+  "blockruler.msg.no_target": "准星没有指向任何方块（请对着方块，或用 here / 直接给坐标）",
+
+  "blockruler.cmd.pos1": "用准星/脚下/指定坐标设点 A",
+  "blockruler.cmd.pos2": "用准星/脚下/指定坐标设点 B",
+  "blockruler.cmd.clear": "清除两点",
+  "blockruler.cmd.hud": "显示 / 隐藏 HUD 面板",
+  "blockruler.cmd.info": "把测量结果打印到聊天栏",
+  "blockruler.cmd.alias": "别名：/br"
+}

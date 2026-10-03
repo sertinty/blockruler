@@ -1,0 +1,19 @@
+# 统一换行符，避免 Windows 上 checkout 出的 CRLF 破坏 gradlew / 脚本
+* text=auto
+
+*.java       text eol=lf
+*.gradle     text eol=lf
+*.json       text eol=lf
+*.md         text eol=lf
+*.properties text eol=lf
+*.yml        text eol=lf
+*.yaml       text eol=lf
+gradlew      text eol=lf
+.gitignore   text eol=lf
+.gitattributes text eol=lf
+
+*.bat        text eol=crlf
+
+*.jar        binary
+*.png        binary
+*.zip        binary

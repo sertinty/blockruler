@@ -1,0 +1,35 @@
+{
+  "key.category.blockruler.main": "BlockRuler",
+  "key.blockruler.set_a": "Set Point A (crosshair block)",
+  "key.blockruler.set_b": "Set Point B (crosshair block)",
+  "key.blockruler.clear": "Clear both points",
+  "key.blockruler.toggle_hud": "Toggle HUD panel",
+
+  "blockruler.hud.title": "BlockRuler",
+  "blockruler.hud.unset": "unset",
+
+  "blockruler.label.delta": "d",
+  "blockruler.label.span": "blocks",
+  "blockruler.label.distance": "dist",
+  "blockruler.label.volume": "volume",
+  "blockruler.label.dimension": "dim",
+  "blockruler.unit.blocks": "blocks",
+
+  "blockruler.hint.empty": "Press G / H to pick two points",
+  "blockruler.hint.only_a": "Point A set - press H for point B",
+  "blockruler.hint.only_b": "Point B set - press G for point A",
+
+  "blockruler.msg.set_a": "Point A set to %s",
+  "blockruler.msg.set_b": "Point B set to %s",
+  "blockruler.msg.cleared": "Both points cleared",
+  "blockruler.msg.hud_on": "HUD panel shown",
+  "blockruler.msg.hud_off": "HUD panel hidden",
+  "blockruler.msg.no_target": "No block in sight (aim at a block, or use \"here\"/coordinates)",
+
+  "blockruler.cmd.pos1": "set point A from crosshair / feet / coords",
+  "blockruler.cmd.pos2": "set point B from crosshair / feet / coords",
+  "blockruler.cmd.clear": "clear both points",
+  "blockruler.cmd.hud": "show / hide the HUD panel",
+  "blockruler.cmd.info": "print the measurement to chat",
+  "blockruler.cmd.alias": "alias: /br"
+}
